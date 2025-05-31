@@ -11,4 +11,10 @@ const employees = [
   { id: 10, name: "Gwen Grollmann" },
 ];
 
-export default employees;
+export function getEmployees() {
+  return employees;
+}
+
+export function addEmployees(emp){
+  employees.push(emp)
+}
